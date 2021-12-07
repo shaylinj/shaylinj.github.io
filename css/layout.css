@@ -1,0 +1,483 @@
+/* ------------------------------------------------------------------ */
+/* General Styles
+/* ------------------------------------------------------------------ */
+
+body, html { 
+    background: #000000;
+    height: 100%;
+ }
+
+/* ------------------------------------------------------------------ */
+/* Header Styles
+/* ------------------------------------------------------------------ */
+
+header {
+   position: relative;
+   height: 800px;
+   min-height: 500px;
+   width: 100%;
+   text-align: center;
+   overflow: hidden;
+}
+
+/*header .image {
+    position: relative;
+    width: 2000px;
+    height: 900px;
+    border-block: 100%;
+ }*/
+ 
+header:before {
+   content: '';
+   display: inline-block;
+   vertical-align: middle;
+   height: 100%;
+}
+header .banner {
+   display: inline-block;
+   vertical-align: middle;
+   margin: 0 auto;
+   width: 85%;
+   padding-bottom: 0px;
+   text-align: center;
+}
+.banner{
+    /*background-image: url("css/img/wp5817011.png");*/
+    height: 100%;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+header .banner-text { 
+    width: 100%; 
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header .banner-text h1 {
+   font: 95px/1.1em 'Calistoga';
+   color: rgb(66, 65, 65);
+   letter-spacing: -2px;
+   margin: 0 auto 18px auto;
+}
+header .banner-text h3 {
+   font: 30px/1.9em 'Abhaya Libre';
+   color: rgb(43, 42, 42);
+   margin: 0 auto;
+   width: 70%;
+}
+header .banner-text h3 span,
+header .banner-text h3 a {
+    color: rgb(43, 42, 42);
+}
+header .banner-text hr {
+   width: 60%;
+   margin: 18px auto 24px auto;
+   border-color: #2F2D2E;
+   border-color: rgba(150, 150, 150, .1);
+}
+
+header .social {
+   margin: 24px 0;
+   padding: 0;
+   font-size: 30px;
+}
+header .social li {
+   display: inline-block;
+   margin: 0 15px;
+   padding: 0;
+}
+header .social li a { color: #fff; }
+header .social li a:hover { color: #ca83e6; }
+
+/* scrolldown link */
+header .scrolldown a {
+   position: absolute;
+   bottom: 30px;
+   left: 50%;
+   margin-left: -29px;
+   color: rgb(43, 42, 42);
+   display: block;
+   height: 42px;
+   width: 42px;
+   font-size: 42px;
+   line-height: 42px;
+   color: rgb(43, 42, 42);
+   border-radius: 100%;
+   -webkit-transition: all .2s ease-in-out;
+   -moz-transition: all .2s ease-in-out;
+   -o-transition: all .2s ease-in-out;
+   transition: all .2s ease-in-out;
+}
+header .scrolldown a:hover { color: #ca83e6; }
+
+/* ------------------------------------------------------------------ */
+/* Navigation Bar
+/* ------------------------------------------------------------------ */
+
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+	 margin: 0;
+	 padding: 0;
+	 border: none;
+	 outline: none;
+}
+
+#nav-wrap {
+   font: 15px 'Abhaya Libre';
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin: 0 auto;
+   z-index: 100;
+   position: fixed;
+   left: 0;
+   top: 0;
+}
+.opaque { background-color: #1f1e1e; }
+
+#nav-wrap > a.mobile-btn { display: none; }
+
+ul#nav {
+   min-height: 48px;
+   width: auto;
+   text-align: center;
+}
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 48px;
+   display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+   display: inline-block;
+   padding: 8px 13px;
+   line-height: 32px;
+   text-decoration: none;
+   text-align: left;
+   color: #ca83e6;
+    -webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active { background-color: transparent !important; }
+ul#nav li.current a { color: #fafafa; }
+
+
+/* ------------------------------------------------------------------ */
+/* About Me
+/* ------------------------------------------------------------------ */
+
+#about {
+    background: #1f1e1e;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+#about a, #about a:visited  { color: #fff; }
+#about a:hover, #about a:focus { color: #ca83e6; }
+
+#about h2 {
+   font: 30px/35px 'Abhaya Libre';
+   color: #fff;
+   margin-bottom: 12px;
+}
+#about p {
+   line-height: 30px;
+   color: #ccc;
+}
+#about .me {
+   position:absolute;
+   width: 200px;
+   height: 170px;
+   border-radius: 90%;
+}
+#about .main-col { padding-right: 5%; }
+#about .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+#about .download .button:hover {
+   background: #fff;
+   color: #2B2B2B;
+}
+#about .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* Education
+/* ------------------------------------------------------------------ */
+
+#education {
+    background: rgb(212, 209, 209);
+    padding-top: 100px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+#education a, #education a:visited  { color: #ca83e6; }
+#education a:hover, #education a:focus { color: #313131; }
+
+#education h1 {
+   font: 18px/24px 'Abhaya Libre';
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#education h1 span {
+   border-bottom: 3px solid #ca83e6;
+   padding-bottom: 6px;
+}
+#education h3 {
+   font: 25px/30px 'Abhaya Libre';
+}
+
+#education h4 {
+    font: 20px/25px 'Abhaya Libre';
+ }
+ #education h5 {
+    font: 15px/20px 'Abhaya Libre';
+ }
+
+#education .header-col { padding-top: 9px; }
+#education .main-col { padding-right: 10%; }
+
+.education{
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+   border-bottom: 1px solid #E8E8E8;
+}
+#education .info {
+   font: 16px/24px 'Abhaya Libre';
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#education .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#education .date {
+   font: 15px/24px 'Abhaya Libre';
+   margin-top: 6px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Work Experience
+/* ------------------------------------------------------------------ */
+
+#work {
+    background: rgb(212, 209, 209);
+    padding-top: 100px;
+    padding-bottom: 10px;
+    overflow: hidden;
+ }
+ 
+ #work a, #work a:visited  { color: #ca83e6; }
+ #work a:hover, #work a:focus { color: #313131; }
+ 
+ #work h1 {
+    font: 18px/24px 'Abhaya Libre';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+ }
+ #work h1 span {
+    border-bottom: 3px solid #ca83e6;
+    padding-bottom: 6px;
+ }
+ #work h3 {
+    font: 25px/30px 'Abhaya Libre';
+ }
+ 
+ #work .header-col { padding-top: 9px; }
+ #work .main-col { padding-right: 10%; }
+ 
+ .work{
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E8E8E8;
+ }
+ #work .info {
+    font: 16px/24px 'Abhaya Libre';
+    color: #6E7881;
+    margin-bottom: 18px;
+    margin-top: 9px;
+ }
+ #work .info span {
+    margin-right: 5px;
+    margin-left: 5px;
+ }
+ #work .date {
+    font: 15px/24px 'Abhaya Libre';
+    margin-top: 6px;
+ }
+
+/*----------------------------------------------*/
+/*	Skills
+/*----------------------------------------------*/
+
+#skill {
+    background: rgb(212, 209, 209);
+    padding-top: 70px;
+    padding-bottom: 100px;
+    overflow: hidden;
+ }
+ 
+ #skill a, #skill a:visited  { color: #ca83e6; }
+ #skill a:hover, #skill a:focus { color: #313131; }
+
+#skill h1 {
+    font: 18px/24px 'Abhaya Libre';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+ }
+ #skill h1 span {
+    border-bottom: 3px solid #ca83e6;
+    padding-bottom: 6px;
+ }
+ #skill h3 {
+    font: 25px/30px 'Abhaya Libre';
+ }
+#skill .bars {
+	width: 95%;
+	float: left;
+	padding: 0;
+	text-align: left;
+}
+.bars .skills {
+  	margin-top: 36px;
+   list-style: none;
+}
+.bars li {
+   position: relative;
+  	margin-bottom: 60px;
+  	background: #333;
+  	height: 42px;
+  	border-radius: 0px;
+}
+.bars li em {
+	font: 15px 'Abhaya Libre';
+    color: #313131;
+	text-transform: uppercase;
+    letter-spacing: 2px;
+	font-weight: normal;
+    position: relative;
+	top: -36px;
+}
+.bar-expand {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding-right: 24px;
+  	background: #313131;
+    display: inline-block;
+  	height: 42px;
+    line-height: 42px;
+    border-radius: 0px;
+}
+
+
+/* fadein/fadeout effect for modal popup
+/* ------------------------------------------------------------------ */
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content .popup-modal {
+   opacity: 0;
+   -webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+   transition: all 200ms ease-in-out;
+}
+/* content fadein */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content .popup-modal {
+   opacity: 1;
+}
+/* content fadeout */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
+   opacity: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Footer
+/* ------------------------------------------------------------------ */
+
+footer {
+   padding-top: 48px;
+   margin-bottom: 48px;
+   color: #303030;
+   font-size: 14px;
+   text-align: center;
+   position: relative;
+}
+
+footer a, footer a:visited { color: #525252; }
+footer a:hover, footer a:focus { color: #fff; }
+
+/* social links */
+footer .social-links {
+   margin: 60px ;
+   padding: 0;
+   font-size: 30px;
+   text-align: center;
+}
+footer .social-links li {
+    position: center;
+    display:inline-flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 42px;
+    color: #ba86ca;
+    float: none;
+}
+
+footer .social-links li:first-child { margin-left: 0; }
+
+/* Go To Top Button */
+#go-top {
+	position: absolute;
+	top: -24px;
+   left: 50%;
+   margin-left: -30px;
+}
+#go-top a {
+	text-decoration: none;
+	border: 0 none;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background-color: #525252;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    font-size: 21px;
+    line-height: 60px;
+ 	border-radius: 100%;
+}
+#go-top a:hover { background-color: #ca83e6; }
+
+
+.social .btn:first-child{
+   margin-right: 30px;
+}
+.social .btn{
+   padding-left: 30px;
+   padding-right: 30px; 
+}
+.social .btn i{
+   margin-right: 15px;
+}
